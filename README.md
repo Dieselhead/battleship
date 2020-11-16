@@ -1,3 +1,9 @@
+# Battleship Game
+
+This project was built using the Create React App tool. You'll find the commands in the description below.
+
+The game is a two player game using hot seat to switch players.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -15,6 +21,8 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### `npm test`
+
+**No tests are included**
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
