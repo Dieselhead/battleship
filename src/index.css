@@ -7,7 +7,121 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tools-place-ship {
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    grid-template-rows: 50% auto;
+    width: 150px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.gameboard-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.gameboard-blocker {
+    display: flex;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hitmarker {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    z-index: 10;
+}
+
+.ship-aircraft-carrier {
+    background-image: url('./img/v1/AircraftCarrier.png');
+    width: 160px;
+    height: 32px;
+    position: absolute;
+    transform-origin: 16px 16px;
+}
+
+.ship-battleship {
+    background-image: url('./img/v1/BattleShip.png');
+    width: 128px;
+    height: 32px;
+    position: absolute;
+    transform-origin: 16px 16px;
+}
+
+.ship-cruiser {
+    background-image: url('./img/v1/Cruiser.png');
+    width: 96px;
+    height: 32px;
+    position: absolute;
+    transform-origin: 16px 16px;
+}
+
+.ship-patrol-boat {
+    background-image: url('./img/v1/PatrolBoat.png');
+    width: 64px;
+    height: 32px;
+    position: absolute;
+    transform-origin: 16px 16px;
+}
+
+.ship-submarine {
+    background-image: url('./img/v1/Submarine.png');
+    width: 96px;
+    height: 32px;
+    position: absolute;
+    transform-origin: 16px 16px;
+}
+
+.fire {
+    background-image: url('./img/fire.png');
+}
+
+.smoke {
+    background-image: url('./img/smoke2.png');
+    background-position-x: -64px;
+    background-position-y: 0px;
+}
+
+.water {
+    background-image: url('./img/water.png');
+    background-position-x: -32px;
+    background-position-y: -32px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 32px);
+    grid-template-rows: repeat(10, 32px);
+    box-sizing: border-box;
+    width: 320px;
+    height: 320px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.cell {
+    display: flex;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    background-color: #f88;
+    border: 1px dashed #fff;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
